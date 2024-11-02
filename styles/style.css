@@ -1,0 +1,194 @@
+@media (max-width: 768px) {  
+    body {  
+        background-image: url('../images/background.jpg'); /* Different image for smaller screens */  
+    }  
+}
+html, body {  
+    height: 100%; /* Ensure full height */  
+    margin: 0; /* Reset margin */  
+}  
+
+/* Full-Screen Background Image */  
+body {  
+    font-family: Arial, sans-serif; /* Font style for the body */  
+    background-image: url('../images/background.jpg'); /* Path to the background image */  
+    background-size:cover; /* Cover the entire viewport */  
+    background-position: center; /* Center the background image */  
+ /* Do not repeat the background */  
+    color: white; /* Default text color */  
+}  
+.main-container {  
+    min-height: calc(100vh - 60px); /* Minimum height considering footer */  
+    display: flex; /* Use flexbox for layout */  
+    flex-direction: column; /* Stack children vertically */  
+    justify-content: center; /* Center content vertically */  
+    align-items: center; /* Center content horizontally */  
+}  
+
+/* Title Styles */  
+.upload-title {  
+    font-size: 2.5em; /* Increased title size */  
+    text-align: center; /* Center the title */  
+    margin-bottom: 20px; /* Space below the title */  
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Shadow for depth */  
+}  
+
+/* Home Page Content Styles */  
+.home-content {  
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */  
+    padding: 20px; /* Padding for content */  
+    border-radius: 10px; /* Rounded corners */  
+    max-width: 600px; /* Max width for content */  
+    margin: auto; /* Center the content */  
+    margin-top: 20px; /* Margin from the top */  
+    margin-bottom: 20px; /* Margin from the bottom */  
+    text-align: center; /* Center text within home content */  
+}  
+
+/* Header and Footer Styles */  
+header, footer {  
+    background-color: #35424a; /* Header and footer background color */  
+    color: #ffffff; /* Text color */  
+    padding: 1rem; /* Padding for header and footer */  
+    text-align: center; /* Center text */  
+}  
+
+header h1 {  
+    margin: 0; /* Remove margin for h1 */  
+}  
+
+/* Navigation Styles */  
+nav ul {  
+    list-style: none; /* Remove bullet points from the list */  
+    padding: 0; /* Remove padding from the list */  
+    display: inline; /* Enable inline display for list */  
+    margin: 0; /* Reset margin */  
+}  
+
+nav ul li {  
+    display: inline; /* Display list items inline */  
+    margin-right: 15px; /* Space between list items */  
+}  
+
+nav ul li a {  
+    color: #ffffff; /* Link color */  
+    text-decoration: none; /* Remove underline */  
+}  
+
+nav ul li a:hover {  
+    text-decoration: underline; /* Underline on hover */  
+}  
+
+/* Header Button Group Styling */  
+.header-buttons {  
+    display: flex; /* Use flexbox for button layout */  
+    justify-content: center; /* Center buttons */  
+    gap: 20px; /* Space between buttons */  
+    margin-top: 10px; /* Add margin to the top */  
+}  
+
+/* Button Styles for Login and Sign Up */  
+button {  
+    background-color: #35424a; /* Button background color */  
+    color: white; /* Button text color */  
+    border: none; /* Remove border */  
+    padding: 10px 20px; /* Padding for button */  
+    border-radius: 4px; /* Rounded corners */  
+    cursor: pointer; /* Pointer on hover */  
+    font-size: 16px; /* Font size */  
+}  
+
+button a {  
+    color: white; /* Link color */  
+    text-decoration: none; /* Remove underline */  
+    display: block; /* Allow the button to fill the anchor */  
+    height: 100%; /* Make anchor fill entire button */  
+}  
+
+button:hover {  
+    background-color: #495057; /* Darker background on hover */  
+}  
+
+/* Form Styles */  
+/* Form Styles */  
+form {  
+    background: #ffffff; /* Form background color */  
+    padding: 30px; /* Increased padding inside the form */  
+    border-radius: 10px; /* More pronounced rounded corners */  
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Deeper shadow for a lifted effect */  
+    max-width: 400px; /* Max width for the form */  
+    margin: 20px auto; /* Center the form on the page */  
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */  
+}  
+
+/* Form Label Styles */  
+form label {  
+    display: block; /* Display labels as block elements */  
+    margin-bottom: 8px; /* Increased space below labels */  
+    color: #35424a; /* Label color */  
+    font-weight: 600; /* Bold labels */  
+}  
+
+/* Input Styles */  
+form input[type="text"],  
+form input[type="email"],  
+form input[type="password"],  
+form input[type="file"],  
+form textarea {  
+    width: 100%; /* Full width inputs */  
+    padding: 12px; /* Increased padding for better spacing */  
+    margin-bottom: 20px; /* Space below inputs */  
+    border: 2px solid #dddddd; /* Border for inputs */  
+    border-radius: 5px; /* Slightly rounded corners */  
+    font-size: 16px; /* Font size for better readability */  
+    transition: border-color 0.3s ease; /* Smooth transition for border color */  
+}  
+
+/* Input Focus Styles */  
+form input[type="text"]:focus,  
+form input[type="email"]:focus,  
+form input[type="password"]:focus,  
+form textarea:focus {  
+    border-color: #007bff; /* Change border color on focus */  
+    outline: none; /* Remove default outline */  
+}  
+
+/* Submit Button Styles */  
+form input[type="submit"] {  
+    background-color: #35424a; /* Button background color */  
+    color: white; /* Button text color */  
+    border: none; /* Remove border */  
+    padding: 12px; /* Increased padding for button */  
+    border-radius: 5px; /* Rounded corners for button */  
+    cursor: pointer; /* Pointer on hover */  
+    font-size: 16px; /* Button font size */  
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transition for hover effects */  
+}  
+
+/* Submit Button Hover Effect */  
+form input[type="submit"]:hover {  
+    background-color: #495057; /* Darker background on hover */  
+    transform: translateY(-2px); /* Slight lift effect on hover */  
+}
+
+/* Footer Specific Styles */  
+.footer {  
+    background-color: #35424a; /* Dark Purple Background */  
+    color: white;  
+    padding: 40px 0;  
+    text-align: center;  
+}  
+.social-icons a {  
+    margin: 0 15px;  
+    color: rgb(244, 237, 237);  
+    text-decoration: none; /* Remove underline */  
+    font-size: 30px; /* Adjust icon size */  
+}  
+.upload-message {
+    padding: 10px;
+    margin: 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f8f9fa; /* Light background */
+    color: #333; /* Dark text */
+}
